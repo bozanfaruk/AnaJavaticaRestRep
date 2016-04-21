@@ -1,9 +1,16 @@
 package anajavatica.rest.controller;
 
-public class Developer {
+import java.io.Serializable;
 
+public class Developer implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 	private String name = "";
 	private String language = "";
+
+	public Developer() {
+
+	}
 
 	public Developer(String name, String language) {
 		super();
@@ -17,6 +24,14 @@ public class Developer {
 
 	public String getLanguage() {
 		return language;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setLanguage(String language) {
+		this.language = language;
 	}
 
 	@Override

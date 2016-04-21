@@ -1,7 +1,6 @@
 package anajavatica.rest.controller;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class RestServiceController {
@@ -44,18 +43,6 @@ public class RestServiceController {
 			}
 		}
 		return result;
-	}
-
-	public int deleteDeveloper(Developer developer) {
-		Iterator<Developer> iterator = getDeveloperList().iterator();
-		while (iterator.hasNext()) {
-			Developer d = iterator.next();
-			if (d.getName().equals(developer.getName()) && d.getLanguage().equals(developer.getLanguage())) {
-				iterator.remove();
-				break;
-			}
-		}
-		return getDeveloperList().size();
 	}
 
 }
