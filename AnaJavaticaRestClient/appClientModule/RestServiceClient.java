@@ -49,7 +49,7 @@ public class RestServiceClient {
 	public void getDeveloper() throws MalformedURLException {
 		Client client = buildClient();
 		WebTarget target = client.target("http://localhost:8080/AnaJavaticaRestWeb/rest/developerRestService/")
-				.path("/getDeveloper");
+				.path("/getDeveloper/Developer2/Delphi");
 		Invocation.Builder builderLogin = target.request(MediaType.APPLICATION_JSON);
 		Developer developer = builderLogin.get(Developer.class);
 		if (developer != null)

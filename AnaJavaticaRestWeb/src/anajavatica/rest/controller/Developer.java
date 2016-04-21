@@ -8,10 +8,6 @@ public class Developer implements Serializable {
 	private String name = "";
 	private String language = "";
 
-	public Developer() {
-
-	}
-
 	public Developer(String name, String language) {
 		super();
 		this.name = name;

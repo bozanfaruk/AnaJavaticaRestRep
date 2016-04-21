@@ -26,7 +26,7 @@ public class RestService {
 	}
 
 	@GET
-	@Path("getDeveloper")
+	@Path("getDeveloper/{name}/{language}")
 	public Developer getDeveloper(@PathParam("name") String name, @PathParam("language") String language) {
 		return getController().getDeveloper(name, language);
 	}
