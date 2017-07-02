@@ -11,6 +11,7 @@ import javax.ws.rs.core.Response;
 
 import anajavatica.rest.controller.Developer;
 
+@SuppressWarnings("javadoc")
 public class RestServiceClient {
 
 	private Client buildClient() {

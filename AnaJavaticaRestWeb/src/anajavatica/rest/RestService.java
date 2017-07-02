@@ -15,6 +15,7 @@ import anajavatica.rest.controller.RestServiceController;
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
 @Path("/developerRestService")
+@SuppressWarnings("javadoc")
 public class RestService {
 
 	private RestServiceController controller = new RestServiceController();

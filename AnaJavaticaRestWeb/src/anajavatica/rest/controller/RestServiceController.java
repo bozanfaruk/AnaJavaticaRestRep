@@ -3,6 +3,7 @@ package anajavatica.rest.controller;
 import java.util.ArrayList;
 import java.util.List;
 
+@SuppressWarnings("javadoc")
 public class RestServiceController {
 
 	private List<Developer> developerList = new ArrayList<>();

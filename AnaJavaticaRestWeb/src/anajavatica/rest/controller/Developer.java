@@ -2,6 +2,7 @@ package anajavatica.rest.controller;
 
 import java.io.Serializable;
 
+@SuppressWarnings("javadoc")
 public class Developer implements Serializable {
 
 	private static final long serialVersionUID = 1L;
